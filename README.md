@@ -11,7 +11,9 @@ Realizado por:
 <li> <a href="#TEMA1"> TEMA 1 </a> </li>
 <li> <a href="#TEMA2"> TEMA 2 </a> </li>
 </ul>
+  
 <h2 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93"> <a name = "TEMA1"  TEMA 1 </h2>
+  
 <h3 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93">  Subindice </h3>
 <ul class="subindice"> 
             <li> <a href="#redondeo"> Error de redondeo </a> </li>
@@ -23,3 +25,5 @@ Realizado por:
             <li> <a href="#absoluto"> Error absoluto </a> <br> </li> 
             <li> <a href="#relativo"> Error relativo</li> 
 </ul>
+            </nav>
+            </header>
