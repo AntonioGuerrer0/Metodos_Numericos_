@@ -1,3 +1,5 @@
 # Metodos_Numericos_
 Problemario de Métodos Númericos
-holaaaa
+Realizado por:
+  <li>José Antonio Guerrero Lazcano\n Gabriela Hernandéz Júarez</li>
+
