@@ -14,7 +14,7 @@ Realizado por:
   
 <h2 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93"> <a name = "TEMA1"  TEMA 1 </h2>
   
-<h3 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93">  Subindice </h3>
+<h3 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93">  TEMA 1 </h3>
 <ul class="subindice"> 
             <li> <a href="#redondeo"> Error de redondeo </a> </li>
             <li> <a href="#precision"> Perdida de precisión </a> </li>
