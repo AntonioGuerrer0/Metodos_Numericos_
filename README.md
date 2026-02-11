@@ -12,8 +12,8 @@ Aplica los métodos numéricos para resolver problemas científicos y de ingenie
  <ul class="Indice">
    <ul class = "subindice">
 <li> <a href="#Competencia de la Asignatura"> Competencia de la Asignatura </a> </li>
-<li> <a href="#Competencia del tema"> Competencia del TEMA </a> </li>
 <li> <a href="#TEMA1"> TEMA 1 </a> </li>
+<li> <a href="#Competencia 1"> Competencia del TEMA 1 </a> </li>
 <li> <a href="#TEMA2"> TEMA 2 </a> </li>
 </ul>
   
@@ -21,7 +21,7 @@ Aplica los métodos numéricos para resolver problemas científicos y de ingenie
   
 <h3 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93">  Subindice </h3>
 <ul class="subindice"> 
-<h2 align = "center"> <font size = "+6"  > <a name="Competencia del tema">Competencia del tema</font> </a></h2>
+<h2 align = "center"> <font size = "+6"  > <a name="Competencia1">Competencia del tema</font> </a></h2>
 Aplica los métodos numéricos con el objeto de solucionar ecuaciones mediante los métodos de intervalo e interpolación apoyada de un lenguaje de programación.  
 <li> <a href="#redondeo"> Error de redondeo </a> </li>
 <li> <a href="#precision"> Perdida de precisión </a> </li>
