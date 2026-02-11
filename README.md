@@ -17,6 +17,8 @@ Realizado por:
   
 <h3 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93">  Subindice </h3>
 <ul class="subindice"> 
+<h2 align = "center"> <font size = "+6"  > <a name="Competencia del tema">Competencia del tema</font> </a></h2>
+Aplica los métodos numéricos con el objeto de solucionar ecuaciones mediante los métodos de intervalo e interpolación apoyada de un lenguaje de programación.  
 <li> <a href="#redondeo"> Error de redondeo </a> </li>
 <li> <a href="#precision"> Perdida de precisión </a> </li>
 <li> <a href="#comparacion"> Comparación directa </a> </li> 
@@ -29,3 +31,9 @@ Realizado por:
               </ul>
             </nav>
 </font> </header>
+# Sobre la materia 
+<h2 align = "center"> <font  size = "+6" > <a name="Competencia de la Asignatura">Competencia de la asignatura</font></a> </h2>
+Aplica los métodos numéricos para resolver problemas científicos y de ingeniería utilizando la computadora.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
