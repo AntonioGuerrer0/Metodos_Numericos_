@@ -6,6 +6,8 @@ Realizado por:
 # Sobre la materia 
 <h2 align = "center"> <font  size = "+6" > <a name="Competencia de la Asignatura">Competencia de la asignatura</font></a> </h2>
 Aplica los métodos numéricos para resolver problemas científicos y de ingeniería utilizando la computadora.
+<h2 align = "center"> <font  size = "+6" > <a name="Competencia de la Asignatura">Significado de Métodos Númericos</font></a> </h2>
+Técnicas matemáticas que se utilizan para formular problemas de manera que puedan resolverse mediante operaciones aritméticas.
 <h2 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93">  Indice </font></h2>
 <header> <font color = "red" size="+1" font face = "aharoni">
 <nav class="navegacion">
