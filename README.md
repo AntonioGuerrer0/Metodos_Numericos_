@@ -2,6 +2,10 @@
 Problemario de Métodos Númericos
 Realizado por:
   <li>José Antonio Guerrero Lazcano </li>  <li>Gabriela Hernandéz Júarez</li>
+  
+# Sobre la materia 
+<h2 align = "center"> <font  size = "+6" > <a name="Competencia de la Asignatura">Competencia de la asignatura</font></a> </h2>
+Aplica los métodos numéricos para resolver problemas científicos y de ingeniería utilizando la computadora.
 <h2 align = "center"> <font color = "darkorange" size = "+6"  font face = "bauhaus 93">  Indice </font></h2>
 <header> <font color = "red" size="+1" font face = "aharoni">
 <nav class="navegacion">
@@ -31,10 +35,5 @@ Aplica los métodos numéricos con el objeto de solucionar ecuaciones mediante l
               </ul>
             </nav>
 </font> </header>
-  
-# Sobre la materia 
-<h2 align = "center"> <font  size = "+6" > <a name="Competencia de la Asignatura">Competencia de la asignatura</font></a> </h2>
-Aplica los métodos numéricos para resolver problemas científicos y de ingeniería utilizando la computadora.
-
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
