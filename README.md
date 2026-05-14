@@ -42,4 +42,4 @@ Aplica los métodos numéricos con el objeto de solucionar ecuaciones mediante l
 
 <h2 align = "center"> <font font face = "forte"><a name="redondeo"> Error de redondeo </h2></a>
 
-<h3> <font font face = "arial"> DESCRIPCIÓN: </h3>
+<h3> <font font face = "arial"> DESCRIPCIÓN: </h3> 
