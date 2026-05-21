@@ -5,31 +5,7 @@ Realizado por:
 <li>José Antonio Guerrero Lazcano</li>
 <li>Gabriela Hernández Juárez</li>
 
-# Sobre la materia
 
-<h2 align = "center">
-<font size = "+6">
-<a name="Competencia_de_la_Asignatura">Competencia de la asignatura</a>
-</font>
-</h2>
-
-Aplica los métodos numéricos para resolver problemas científicos y de ingeniería utilizando la computadora.
-
-<h2 align = "center">
-<font size = "+6">
-<a name="Significado_Metodos_Numericos">Significado de Métodos Numéricos</a>
-</font>
-</h2>
-
-Técnicas matemáticas que se utilizan para formular problemas de manera que puedan resolverse mediante operaciones aritméticas.
-
----
-
-<h2 align = "center">
-<font color = "darkorange" size = "+6" font face = "bauhaus 93">
-Índice
-</font>
-</h2>
 
 <header>
 <font color = "red" size="+1" font face = "aharoni">
@@ -72,6 +48,31 @@ Técnicas matemáticas que se utilizan para formular problemas de manera que pue
 
 </font>
 </header>
+# Sobre la materia
+
+<h2 align = "center">
+<font size = "+6">
+<a name="Competencia_de_la_Asignatura">Competencia de la asignatura</a>
+</font>
+</h2>
+
+Aplica los métodos numéricos para resolver problemas científicos y de ingeniería utilizando la computadora.
+
+<h2 align = "center">
+<font size = "+6">
+<a name="Significado_Metodos_Numericos">Significado de Métodos Numéricos</a>
+</font>
+</h2>
+
+Técnicas matemáticas que se utilizan para formular problemas de manera que puedan resolverse mediante operaciones aritméticas.
+
+---
+
+<h2 align = "center">
+<font color = "darkorange" size = "+6" font face = "bauhaus 93">
+Índice
+</font>
+</h2>
 
 ---
 
