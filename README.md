@@ -1,3 +1,4 @@
+<img width="492" height="135" alt="335450940-9e71a232-e654-43b5-b365-b490ccc00c04" src="https://github.com/user-attachments/assets/5f069563-1ab5-4c49-86a6-7348b149882b" />
 # Metodos_Numericos_
 Problemario de Métodos Numéricos
 
