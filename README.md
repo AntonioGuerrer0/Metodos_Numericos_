@@ -14,8 +14,6 @@
 
 <li><a href="#competencia-asignatura">Competencia de la Asignatura</a></li>
 
-<li><a href="#competencia-tema">Competencia del Tema</a></li>
-
 <li>
 <a href="#errores-numericos">Errores Numéricos</a>
 
@@ -97,13 +95,6 @@ Aplica los métodos numéricos para resolver problemas científicos y de ingenie
 
 <hr>
 
-<h2 id="competencia-tema" align="center">
-Competencia del Tema
-</h2>
-
-<p>
-Aplica los métodos numéricos con el objeto de solucionar ecuaciones mediante los métodos de intervalo e interpolación apoyada de un lenguaje de programación.
-</p>
 
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
