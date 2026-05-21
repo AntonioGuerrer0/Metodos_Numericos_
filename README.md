@@ -89,9 +89,6 @@ Competencia de la Asignatura
 Aplica los métodos numéricos para resolver problemas científicos y de ingeniería utilizando la computadora.
 </p>
 
-<p align="right">
-<a href="#indice">⬆ Volver al índice</a>
-</p>
 
 <hr>
 
