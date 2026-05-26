@@ -15,7 +15,7 @@
 <li><a href="#competencia-asignatura">Competencia de la Asignatura</a></li>
 
 <li>
-<a href="#errores-numericos">Errores Numéricos</a>
+<a href="#errores-numericos"> TEMA 1: Errores Numéricos</a>
 
 <ul>
 <li><a href="#error-redondeo">Error de redondeo</a></li>
@@ -31,7 +31,7 @@
 </li>
 
 <li>
-<a href="#sistemas-ecuaciones">Sistemas de Ecuaciones</a>
+<a href="#sistemas-ecuaciones"> TEMA 2: Sistemas de Ecuaciones</a>
 
 <ul>
 <li><a href="#eliminacion-gaussiana">Eliminación Gaussiana</a></li>
@@ -43,7 +43,7 @@
 </li>
 
 <li>
-<a href="#metodos-integracion">Métodos de Integración</a>
+<a href="#metodos-integracion">TEMA 3: Métodos de Integración</a>
 
 <ul>
 <li><a href="#trapecio">Método del Trapecio</a></li>
@@ -55,7 +55,7 @@
 </li>
 
 <li>
-<a href="#interpolacion">Interpolación</a>
+<a href="#interpolacion"> TEMA 4: Interpolación</a>
 
 <ul>
 <li><a href="#interpolacion-lineal">Interpolación Lineal</a></li>
@@ -67,7 +67,7 @@
 </li>
 
 <li>
-<a href="#ecuaciones-diferenciales">Ecuaciones Diferenciales</a>
+<a href="#ecuaciones-diferenciales"> TEMA 5: Ecuaciones Diferenciales</a>
 
 <ul>
 <li><a href="#euler">Euler</a></li>
@@ -329,6 +329,21 @@ Ep = Er × 100
 
 <hr>
 
+<h3>Pseudocódigo</h3>
+
+<pre>
+Inicio
+
+    Definir numeroGrande = 1000000000.0
+    Definir numeroPequeno = 0.0000001
+
+    resultado = numeroGrande + numeroPequeno
+
+    Mostrar "Resultado: " + resultado
+
+Fin
+</pre>
+
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -345,6 +360,10 @@ public class PerdidaPrecision {
     }
 }
 ```
+<h3> compilación del codigo </h3>
+
+<img width="502" height="181" alt="Captura de pantalla 2026-05-26 113924" src="https://github.com/user-attachments/assets/0f7ae3b5-ad0f-4190-8afa-f6e936376129" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -449,6 +468,39 @@ Er = |Valor real - Valor aproximado| / |Valor real|
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
+
+<pre>
+Inicio
+
+    Definir a = 0.1 + 0.2
+    Definir b = 0.3
+
+    Mostrar "Valor de a: " + a
+    Mostrar "Valor de b: " + b
+
+    Si a == b Entonces
+
+        Mostrar "Son iguales"
+
+    Sino
+
+        Mostrar "No son exactamente iguales"
+
+    FinSi
+
+    // Comparación usando tolerancia
+
+    Definir epsilon = 0.000001
+
+    Si valorAbsoluto(a - b) < epsilon Entonces
+
+        Mostrar "Son aproximadamente iguales"
+
+    FinSi
+
+Fin
+</pre>
 
 <h3>Ejemplo en Java</h3>
 
@@ -478,6 +530,10 @@ public class ComparacionDirecta {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+<img width="382" height="163" alt="Captura de pantalla 2026-05-26 114217" src="https://github.com/user-attachments/assets/bb2d071b-4964-4e76-a681-4014bb6a592f" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -584,7 +640,20 @@ Er = |Valor real - Valor aproximado| / |Valor real|
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir a = 1000.0001
+    Definir b = 1000.0000
+
+    resultado = a - b
+
+    Mostrar "Resultado de la resta: " + resultado
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -601,6 +670,9 @@ public class CancelacionResta {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+<img width="535" height="242" alt="Captura de pantalla 2026-05-26 114258" src="https://github.com/user-attachments/assets/da1fb25f-84ce-4a5d-9af1-5f955785d7e4" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -703,6 +775,21 @@ Er = |Valor real - Valor aproximado| / |Valor real|
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
+
+<pre>
+Inicio
+
+    Definir numeroMaximo = valorMáximoEntero
+
+    Mostrar "Valor máximo del entero: " + numeroMaximo
+
+    resultado = numeroMaximo + 1
+
+    Mostrar "Resultado después del desbordamiento: " + resultado
+
+Fin
+</pre>
 
 <h3>Ejemplo en Java</h3>
 
@@ -721,6 +808,10 @@ public class Desbordamiento {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+<img width="566" height="190" alt="Captura de pantalla 2026-05-26 114700" src="https://github.com/user-attachments/assets/e444b0a6-2d3f-4a88-9bb9-3411d0c96fb7" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -816,7 +907,21 @@ Er = |Valor real - Valor aproximado| / |Valor real|
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir numeroDecimal = 9.99
+
+    numeroEntero = convertirEntero(numeroDecimal)
+
+    Mostrar "Número decimal: " + numeroDecimal
+
+    Mostrar "Número entero: " + numeroEntero
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -834,6 +939,10 @@ public class ConversionEstrecha {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+<img width="455" height="223" alt="Captura de pantalla 2026-05-26 115027" src="https://github.com/user-attachments/assets/c81d88b4-dbce-47ee-9170-9ac2a46a333c" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
