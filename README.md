@@ -107,9 +107,108 @@ Errores Numéricos
 1. Error de redondeo
 </h2>
 
+
+<h3>¿Qué es?</h3>
+
 <p>
-Aquí va tu contenido sobre Error de redondeo.
+El error de redondeo ocurre cuando un número decimal no puede representarse exactamente dentro de la memoria de la computadora, por lo que el sistema realiza una aproximación. Este tipo de error es muy común en métodos numéricos debido a que las computadoras trabajan con una cantidad limitada de cifras significativas.
 </p>
+
+<p>
+Por ejemplo:
+</p>
+
+<pre>
+0.1 + 0.2 != 0.3
+</pre>
+
+<p>
+Esto sucede porque algunos números decimales no pueden almacenarse de manera exacta en formato binario.
+</p>
+
+<hr>
+
+<h3>Fórmulas</h3>
+
+<h4>Error absoluto</h4>
+
+<pre>
+Ea = |Valor real - Valor aproximado|
+</pre>
+
+<h4>Error relativo</h4>
+
+<pre>
+Er = |Valor real - Valor aproximado| / |Valor real|
+</pre>
+
+<h4>Error porcentual</h4>
+
+<pre>
+Ep = Er × 100
+</pre>
+
+<hr>
+
+<h3>Ventajas</h3>
+
+<ul>
+<li>Permite realizar cálculos rápidos en computadoras.</li>
+<li>Facilita el manejo de números muy grandes o muy pequeños.</li>
+<li>Reduce el consumo de memoria.</li>
+<li>Hace posible la implementación de métodos numéricos complejos.</li>
+</ul>
+
+<hr>
+
+<h3>Desventajas</h3>
+
+<ul>
+<li>Puede generar resultados inexactos.</li>
+<li>Los errores pueden acumularse durante múltiples operaciones.</li>
+<li>En cálculos científicos puede afectar significativamente la precisión.</li>
+<li>Puede provocar diferencias entre resultados teóricos y computacionales.</li>
+</ul>
+
+<hr>
+
+<h3>¿En qué ramas de la ingeniería se utiliza?</h3>
+
+<ul>
+<li><b>Ingeniería en Sistemas Computacionales:</b> Desarrollo de software científico, simulación numérica e inteligencia artificial.</li>
+
+<li><b>Ingeniería Civil:</b> Cálculo estructural y análisis de deformaciones.</li>
+
+<li><b>Ingeniería Mecánica:</b> Simulación de movimiento y fuerzas.</li>
+
+<li><b>Ingeniería Electrónica:</b> Procesamiento digital de señales y sistemas embebidos.</li>
+
+<li><b>Ingeniería Industrial:</b> Modelado matemático y optimización.</li>
+</ul>
+
+<hr>
+
+<h3>Ejemplo en Java</h3>
+
+```java
+public class ErrorRedondeo {
+
+    public static void main(String[] args) {
+
+        double a = 0.1;
+        double b = 0.2;
+
+        double resultado = a + b;
+
+        System.out.println("Resultado: " + resultado);
+
+        if(resultado == 0.3){
+            System.out.println("Es igual a 0.3");
+        } else {
+            System.out.println("No es exactamente igual a 0.3");
+        }
+    }
+}
 
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
