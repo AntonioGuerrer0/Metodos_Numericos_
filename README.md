@@ -205,6 +205,10 @@ public class ErrorRedondeo {
     }
 }
 ```
+<h2> compilacion del codigo </h2>
+
+<img width="457" height="177" alt="Captura de pantalla 2026-05-26 113252" src="https://github.com/user-attachments/assets/6aa0da87-7d8b-4c09-86bd-8fc9355e54d0" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
