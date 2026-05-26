@@ -182,6 +182,30 @@ Ep = Er × 100
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
+
+<pre>
+Inicio
+
+    Definir a = 0.1
+    Definir b = 0.2
+
+    resultado = a + b
+
+    Mostrar "Resultado: " + resultado
+
+    Si resultado == 0.3 Entonces
+
+        Mostrar "Es igual a 0.3"
+
+    Sino
+
+        Mostrar "No es exactamente igual a 0.3"
+
+    FinSi
+
+Fin
+</pre>
 
 <h3>Ejemplo en Java</h3>
 
