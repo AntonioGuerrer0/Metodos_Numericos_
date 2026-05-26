@@ -204,6 +204,119 @@ public class ErrorRedondeo {
         }
     }
 }
+```
+<p align="right">
+<a href="#indice">⬆ Volver al índice</a>
+</p>
 
+<hr>
 
+<h2 id="perdida-precision" align="center">
+2. Pérdida de precisión
+</h2>
 
+<h3>¿Qué es?</h3>
+
+<p>
+La pérdida de precisión ocurre cuando una computadora no puede representar todos los dígitos exactos de un número durante una operación matemática. Esto provoca que algunas cifras significativas se pierdan o se modifiquen, generando resultados aproximados.
+</p>
+
+<p>
+Este problema es muy común en métodos numéricos, especialmente cuando se realizan operaciones con números muy grandes, muy pequeños o con muchos decimales.
+</p>
+
+<p>
+Por ejemplo:
+</p>
+
+<pre>
+1000000000.0 + 0.0000001
+</pre>
+
+<p>
+La computadora puede ignorar el número pequeño debido a la limitada precisión del tipo de dato.
+</p>
+
+<hr>
+
+<h3>Fórmulas</h3>
+
+<h4>Error absoluto</h4>
+
+<pre>
+Ea = |Valor real - Valor aproximado|
+</pre>
+
+<h4>Error relativo</h4>
+
+<pre>
+Er = |Valor real - Valor aproximado| / |Valor real|
+</pre>
+
+<h4>Error porcentual</h4>
+
+<pre>
+Ep = Er × 100
+</pre>
+
+<hr>
+
+<h3>Ventajas</h3>
+
+<ul>
+<li>Permite realizar cálculos complejos rápidamente.</li>
+<li>Reduce el tiempo de procesamiento en computadoras.</li>
+<li>Facilita el manejo de grandes cantidades de datos.</li>
+<li>Hace posible el uso de simulaciones numéricas.</li>
+</ul>
+
+<hr>
+
+<h3>Desventajas</h3>
+
+<ul>
+<li>Puede producir resultados inexactos.</li>
+<li>Se pierden cifras significativas durante operaciones matemáticas.</li>
+<li>Los errores pueden acumularse en cálculos repetitivos.</li>
+<li>Puede afectar la precisión en cálculos científicos e ingenieriles.</li>
+</ul>
+
+<hr>
+
+<h3>¿En qué ramas de la ingeniería se utiliza?</h3>
+
+<ul>
+
+<li><b>Ingeniería en Sistemas Computacionales:</b> Desarrollo de software científico y simulaciones.</li>
+
+<li><b>Ingeniería Electrónica:</b> Procesamiento digital de señales y sistemas embebidos.</li>
+
+<li><b>Ingeniería Civil:</b> Modelos matemáticos y cálculos estructurales.</li>
+
+<li><b>Ingeniería Mecánica:</b> Simulación de fuerzas y movimientos.</li>
+
+<li><b>Ingeniería Industrial:</b> Optimización y análisis estadístico.</li>
+
+</ul>
+
+<hr>
+
+<h3>Ejemplo en Java</h3>
+
+```java
+public class PerdidaPrecision {
+
+    public static void main(String[] args) {
+
+        double numeroGrande = 1000000000.0;
+        double numeroPequeno = 0.0000001;
+
+        double resultado = numeroGrande + numeroPequeno;
+
+        System.out.println("Resultado: " + resultado);
+    }
+}
+```
+<p align="right">
+<a href="#indice">⬆ Volver al índice</a>
+</p>
