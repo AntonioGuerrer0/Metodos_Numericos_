@@ -2932,6 +2932,13 @@ public class MetodoEuler {
     }
 }
 ```
+
+<h1>ANIMACION DEL METODO EULER</h1>
+
+
+https://github.com/user-attachments/assets/56f0d751-5512-4172-890e-dd05b3998abe
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
