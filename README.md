@@ -1034,6 +1034,22 @@ Ea = 0.0016
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
+
+<pre>
+Inicio
+
+    Definir valorReal = 3.1416
+    Definir valorAproximado = 3.14
+
+    errorAbsoluto = valorAbsoluto(valorReal - valorAproximado)
+
+    Mostrar "Valor real: " + valorReal
+    Mostrar "Valor aproximado: " + valorAproximado
+    Mostrar "Error absoluto: " + errorAbsoluto
+
+Fin
+</pre>
 
 <h3>Ejemplo en Java</h3>
 
@@ -1055,6 +1071,10 @@ public class ErrorAbsoluto {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+
+<img width="344" height="127" alt="Captura de pantalla 2026-05-27 191054" src="https://github.com/user-attachments/assets/5e4e5bd5-71ff-4334-ab03-bb8b490f29e8" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -1154,7 +1174,26 @@ Er = 0.02
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir valorReal = 50
+    Definir valorAproximado = 49
+
+    errorRelativo = valorAbsoluto(valorReal - valorAproximado) / valorReal
+
+    Mostrar "Valor real: " + valorReal
+    Mostrar "Valor aproximado: " + valorAproximado
+    Mostrar "Error relativo: " + errorRelativo
+
+    errorPorcentual = errorRelativo * 100
+
+    Mostrar "Error porcentual: " + errorPorcentual + "%"
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -1179,6 +1218,10 @@ public class ErrorRelativo {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+<img width="333" height="115" alt="Captura de pantalla 2026-05-27 191731" src="https://github.com/user-attachments/assets/b97f211c-c018-478c-a632-79def4e89110" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -1267,7 +1310,66 @@ Fila_j = Fila_j - (Factor × Fila_i)
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir n = 3
+
+    Definir matriz =
+    {
+        {2, -1, 1, 8},
+        {-3, -1, 2, -11},
+        {-2, 1, 2, -3}
+    }
+
+    // Eliminación Gaussiana
+    Para i = 0 hasta n - 1
+
+        Para j = i + 1 hasta n - 1
+
+            factor = matriz[j][i] / matriz[i][i]
+
+            Para k = i hasta n
+
+                matriz[j][k] =
+                matriz[j][k] - factor * matriz[i][k]
+
+            Fin Para
+
+        Fin Para
+
+    Fin Para
+
+    // Sustitución hacia atrás
+    Definir resultado[n]
+
+    Para i = n - 1 hasta 0
+
+        resultado[i] = matriz[i][n]
+
+        Para j = i + 1 hasta n - 1
+
+            resultado[i] =
+            resultado[i] - matriz[i][j] * resultado[j]
+
+        Fin Para
+
+        resultado[i] =
+        resultado[i] / matriz[i][i]
+
+    Fin Para
+
+    // Mostrar resultados
+    Para i = 0 hasta n - 1
+
+        Mostrar "x" + (i + 1) + " = " + resultado[i]
+
+    Fin Para
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -1324,6 +1426,10 @@ public class EliminacionGaussiana {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+
+<img width="341" height="126" alt="Captura de pantalla 2026-05-27 191917" src="https://github.com/user-attachments/assets/9f853c84-4932-4ccc-8e14-fbb573e3fcc8" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -1412,7 +1518,66 @@ Fila_j = Fila_j - (Factor × Fila_i)
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir matriz =
+    {
+        {2, 1, -1, 8},
+        {-3, -1, 2, -11},
+        {-2, 1, 2, -3}
+    }
+
+    filas = número de filas de la matriz
+    columnas = número de columnas de la matriz
+
+    Para i = 0 hasta filas - 1
+
+        pivote = matriz[i][i]
+
+        // Convertir pivote en 1
+        Para j = 0 hasta columnas - 1
+
+            matriz[i][j] =
+            matriz[i][j] / pivote
+
+        Fin Para
+
+        // Hacer ceros en las demás filas
+        Para j = 0 hasta filas - 1
+
+            Si i ≠ j Entonces
+
+                factor = matriz[j][i]
+
+                Para k = 0 hasta columnas - 1
+
+                    matriz[j][k] =
+                    matriz[j][k] -
+                    factor * matriz[i][k]
+
+                Fin Para
+
+            Fin Si
+
+        Fin Para
+
+    Fin Para
+
+    // Mostrar resultados
+    Mostrar "Resultados:"
+
+    Para i = 0 hasta filas - 1
+
+        Mostrar "x" + (i + 1) +
+        " = " + matriz[i][columnas - 1]
+
+    Fin Para
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -1468,6 +1633,10 @@ public class GaussJordan {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+
+<img width="329" height="140" alt="Captura de pantalla 2026-05-27 192114" src="https://github.com/user-attachments/assets/7d9c96a8-3c1f-4324-b4bd-2fafb8e6f3b8" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -1560,6 +1729,48 @@ Error = |Valor nuevo - Valor anterior|
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
+
+<pre>
+Inicio
+
+    Definir matriz A =
+    {
+        {4, 1, 2},
+        {3, 5, 1},
+        {1, 1, 3}
+    }
+
+    Definir vector b = {4, 7, 3}
+
+    Definir vector x = {0, 0, 0}
+
+    Definir iteraciones = 10
+
+    Para k = 0 hasta iteraciones - 1
+
+        x[0] = (b[0] - A[0][1] * x[1]
+                - A[0][2] * x[2]) / A[0][0]
+
+        x[1] = (b[1] - A[1][0] * x[0]
+                - A[1][2] * x[2]) / A[1][1]
+
+        x[2] = (b[2] - A[2][0] * x[0]
+                - A[2][1] * x[1]) / A[2][2]
+
+    Fin Para
+
+    Mostrar "Resultados:"
+
+    Para i = 0 hasta longitud de x - 1
+
+        Mostrar "x" + (i + 1)
+        + " = " + x[i]
+
+    Fin Para
+
+Fin
+</pre>
 
 <h3>Ejemplo en Java</h3>
 
@@ -1602,6 +1813,10 @@ public class GaussSeidel {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+<img width="330" height="139" alt="Captura de pantalla 2026-05-27 192300" src="https://github.com/user-attachments/assets/ee9a44c5-266b-45fa-848e-8159e7992312" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -1705,7 +1920,90 @@ Optimización de procesos y modelos matemáticos.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir EPSILON = 0.0001
+    Definir MAX_ITERACIONES = 100
+
+    Definir matriz A =
+    {
+        {10, -1, 2},
+        {-1, 11, -1},
+        {2, -1, 10}
+    }
+
+    Definir vector B = {6, 25, -11}
+
+    Definir vector X = {0, 0, 0}
+    Definir vector nuevoX = {0, 0, 0}
+
+    iteracion = 0
+    convergencia = falso
+
+    Mientras no convergencia
+    y iteracion < MAX_ITERACIONES
+
+        Para i = 0 hasta longitud de B - 1
+
+            suma = B[i]
+
+            Para j = 0 hasta longitud de B - 1
+
+                Si i ≠ j Entonces
+
+                    suma =
+                    suma - A[i][j] * X[j]
+
+                Fin Si
+
+            Fin Para
+
+            nuevoX[i] =
+            suma / A[i][i]
+
+        Fin Para
+
+        errorMaximo = 0
+
+        Para i = 0 hasta longitud de B - 1
+
+            error =
+            valorAbsoluto(nuevoX[i] - X[i])
+
+            Si error > errorMaximo Entonces
+
+                errorMaximo = error
+
+            Fin Si
+
+            X[i] = nuevoX[i]
+
+        Fin Para
+
+        Si errorMaximo < EPSILON Entonces
+
+            convergencia = verdadero
+
+        Fin Si
+
+        iteracion = iteracion + 1
+
+    Fin Mientras
+
+    Mostrar "Resultados:"
+
+    Para i = 0 hasta longitud de X - 1
+
+        Mostrar "x" + (i + 1)
+        + " = " + X[i]
+
+    Fin Para
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -1783,6 +2081,11 @@ public class Jacobi {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+
+<img width="324" height="140" alt="Captura de pantalla 2026-05-27 192823" src="https://github.com/user-attachments/assets/4e2dc8fb-3759-4b3c-95f6-4af9a0ecd67d" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -1890,7 +2193,34 @@ Modelado matemático y optimización de procesos.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir a = 0
+    Definir b = 4
+    Definir n = 4
+
+    h = (b - a) / n
+
+    suma = funcion(a) + funcion(b)
+
+    Para i = 1 hasta n - 1
+
+        x = a + i * h
+
+        suma = suma + 2 * funcion(x)
+
+    Fin Para
+
+    resultado = (h / 2) * suma
+
+    Mostrar "Resultado aproximado: "
+    + resultado
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -1923,6 +2253,10 @@ public class MetodoTrapecio {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+<img width="333" height="92" alt="Captura de pantalla 2026-05-27 193005" src="https://github.com/user-attachments/assets/4a4a1d32-4c5b-4902-ad5d-deb9c64265ec" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -2030,7 +2364,42 @@ Optimización y modelado de procesos.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir a = 0
+    Definir b = 4
+    Definir n = 4
+
+    h = (b - a) / n
+
+    suma = funcion(a) + funcion(b)
+
+    Para i = 1 hasta n - 1
+
+        x = a + i * h
+
+        Si i es par Entonces
+
+            suma = suma + 2 * funcion(x)
+
+        Si no
+
+            suma = suma + 4 * funcion(x)
+
+        Fin Si
+
+    Fin Para
+
+    resultado = (h / 3) * suma
+
+    Mostrar "Resultado aproximado: "
+    + resultado
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -2067,6 +2436,10 @@ public class SimpsonUnoTercio {
     }
 }
 ```
+<h3>Compilación del codigo</h3>
+
+<img width="388" height="87" alt="Captura de pantalla 2026-05-27 193620" src="https://github.com/user-attachments/assets/ca436940-e4eb-4eeb-916a-481870d3e15b" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -2175,7 +2548,42 @@ Optimización y modelado de procesos industriales.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir a = 0
+    Definir b = 3
+    Definir n = 3
+
+    h = (b - a) / n
+
+    suma = funcion(a) + funcion(b)
+
+    Para i = 1 hasta n - 1
+
+        x = a + i * h
+
+        Si i es múltiplo de 3 Entonces
+
+            suma = suma + 2 * funcion(x)
+
+        Si no
+
+            suma = suma + 3 * funcion(x)
+
+        Fin Si
+
+    Fin Para
+
+    resultado = (3 * h / 8) * suma
+
+    Mostrar "Resultado aproximado: "
+    + resultado
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -2212,6 +2620,11 @@ public class SimpsonTresOctavos {
     }
 }
 ```
+<h3>Compilacón de codigo</h3>
+
+<img width="335" height="106" alt="Captura de pantalla 2026-05-27 194030" src="https://github.com/user-attachments/assets/f46b2468-3153-4503-8df9-5a79f81d9cd1" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -2317,7 +2730,39 @@ Optimización matemática y modelado de sistemas.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir nodos =
+    {-0.5773502692, 0.5773502692}
+
+    Definir pesos =
+    {1.0, 1.0}
+
+    Definir a = 0
+    Definir b = 3
+
+    suma = 0
+
+    Para i = 0 hasta longitud de nodos - 1
+
+        x = ((b - a) / 2) * nodos[i]
+            + ((b + a) / 2)
+
+        suma =
+        suma + pesos[i] * funcion(x)
+
+    Fin Para
+
+    resultado = ((b - a) / 2) * suma
+
+    Mostrar "Resultado aproximado: "
+    + resultado
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -2350,6 +2795,10 @@ public class CuadraturaGaussiana {
     }
 }
 ```
+<h3>Compilación del codigo</h3>
+<img width="348" height="98" alt="Captura de pantalla 2026-05-27 194707" src="https://github.com/user-attachments/assets/57cddb1f-ea82-439f-9f9a-3383599f38b3" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -2450,7 +2899,28 @@ Análisis estadístico y optimización de procesos.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir x0 = 2
+    Definir y0 = 4
+
+    Definir x1 = 6
+    Definir y1 = 10
+
+    Definir x = 4
+
+    resultado =
+    y0 + ((x - x0) / (x1 - x0))
+    * (y1 - y0)
+
+    Mostrar "Valor interpolado: "
+    + resultado
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -2482,6 +2952,10 @@ public class InterpolacionLineal {
     }
 }
 ```
+<h3>Compilación del codigo</h3>
+
+<img width="335" height="89" alt="Captura de pantalla 2026-05-27 194913" src="https://github.com/user-attachments/assets/cf868956-971e-49aa-a1ec-97a19355e0f0" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -2588,7 +3062,39 @@ Optimización de datos y análisis estadístico.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir x0 = 1
+    Definir y0 = 1
+
+    Definir x1 = 2
+    Definir y1 = 4
+
+    Definir x2 = 3
+    Definir y2 = 9
+
+    Definir x = 2.5
+
+    L0 = ((x - x1) * (x - x2)) /
+         ((x0 - x1) * (x0 - x2))
+
+    L1 = ((x - x0) * (x - x2)) /
+         ((x1 - x0) * (x1 - x2))
+
+    L2 = ((x - x0) * (x - x1)) /
+         ((x2 - x0) * (x2 - x1))
+
+    resultado =
+    (y0 * L0) + (y1 * L1) + (y2 * L2)
+
+    Mostrar "Valor interpolado: "
+    + resultado
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -2635,6 +3141,10 @@ public class InterpolacionCuadratica {
     }
 }
 ```
+<h3>Compilación del codigo</h3>
+
+<img width="331" height="90" alt="Captura de pantalla 2026-05-27 195122" src="https://github.com/user-attachments/assets/ba9d58ad-7198-409d-b9ec-39d4a9cb498b" />
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -2741,7 +3251,43 @@ Análisis estadístico y optimización matemática.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir x = {1, 2, 3}
+    Definir y = {1, 4, 9}
+
+    Definir valorX = 2.5
+
+    resultado = 0
+
+    Para i = 0 hasta longitud de x - 1
+
+        termino = y[i]
+
+        Para j = 0 hasta longitud de x - 1
+
+            Si i ≠ j Entonces
+
+                termino =
+                termino * (valorX - x[j]) /
+                (x[i] - x[j])
+
+            Fin Si
+
+        Fin Para
+
+        resultado = resultado + termino
+
+    Fin Para
+
+    Mostrar "Valor interpolado: "
+    + resultado
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -2786,6 +3332,10 @@ public class InterpolacionLagrange {
     }
 }
 ```
+<h3>Compilación del codigo</h3>
+<img width="346" height="117" alt="Captura de pantalla 2026-05-27 195615" src="https://github.com/user-attachments/assets/59783608-6326-41f0-8db4-78243e946b18" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -2895,8 +3445,63 @@ Análisis matemático y optimización de procesos.
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
-<h3>Ejemplo en Java</h3>
+<pre>
+Inicio
+
+    Definir x = {1, 2, 3}
+    Definir y = {1, 4, 9}
+
+    Definir valorX = 2.5
+
+    n = longitud de x
+
+    Definir matriz diferencias[n][n]
+
+    Para i = 0 hasta n - 1
+
+        diferencias[i][0] = y[i]
+
+    Fin Para
+
+    Para j = 1 hasta n - 1
+
+        Para i = 0 hasta n - j - 1
+
+            diferencias[i][j] =
+            (diferencias[i + 1][j - 1] -
+             diferencias[i][j - 1]) /
+            (x[i + j] - x[i])
+
+        Fin Para
+
+    Fin Para
+
+    resultado = diferencias[0][0]
+
+    Para i = 1 hasta n - 1
+
+        termino = diferencias[0][i]
+
+        Para j = 0 hasta i - 1
+
+            termino =
+            termino * (valorX - x[j])
+
+        Fin Para
+
+        resultado = resultado + termino
+
+    Fin Para
+
+    Mostrar "Valor interpolado: "
+    + resultado
+
+Fin
+</pre>
+<h3>Ejemplo en Java</h3><img width="332" height="87" alt="Captura de pantalla 2026-05-27 200125" src="https://github.com/user-attachments/assets/6fa83102-7d20-4cdb-baf5-dc4df945add0" />
+
 
 ```java
 public class InterpolacionNewton {
@@ -2956,6 +3561,10 @@ public class InterpolacionNewton {
     }
 }
 ```
+<h3>Compilación de codigo</h3>
+<img width="332" height="87" alt="Captura de pantalla 2026-05-27 200125" src="https://github.com/user-attachments/assets/3d585d28-75a8-4bf8-9146-4da1529e702b" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -3033,7 +3642,35 @@ y(n+1) = y(n) + h * f(xn, yn)
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir x0 = 0
+    Definir y0 = 1
+
+    Definir h = 0.1
+
+    Definir pasos = 10
+
+    x = x0
+    y = y0
+
+    Mostrar "x   y"
+
+    Para i = 0 hasta pasos - 1
+
+        Mostrar x + "   " + y
+
+        y = y + h * f(x, y)
+
+        x = x + h
+
+    Fin Para
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -3070,10 +3707,16 @@ public class MetodoEuler {
 }
 ```
 
-<h1>ANIMACION DEL METODO EULER</h1>
+<h3>Compilación del codigo</h3>
+
+<img width="382" height="258" alt="Captura de pantalla 2026-05-27 200920" src="https://github.com/user-attachments/assets/1463675f-25af-4cc7-850f-1d11abfe4147" />
+
+<h3>ANIMACION DEL METODO EULER</h3>
 
 
-https://github.com/user-attachments/assets/56f0d751-5512-4172-890e-dd05b3998abe
+
+https://github.com/user-attachments/assets/13650e31-2851-4ea1-9dea-ae84e9329996
+
 
 
 <p align="right">
@@ -3161,7 +3804,41 @@ y(n+1) = yn + (1/6)(k1 + 2k2 + 2k3 + k4)
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir x = 0
+    Definir y = 1
+
+    Definir h = 0.1
+
+    Definir pasos = 10
+
+    Mostrar "x   y"
+
+    Para i = 0 hasta pasos - 1
+
+        Mostrar x + "   " + y
+
+        k1 = h * f(x, y)
+
+        k2 = h * f(x + h/2, y + k1/2)
+
+        k3 = h * f(x + h/2, y + k2/2)
+
+        k4 = h * f(x + h, y + k3)
+
+        y = y +
+            (k1 + 2*k2 + 2*k3 + k4) / 6
+
+        x = x + h
+
+    Fin Para
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -3202,6 +3879,10 @@ public class RungeKutta {
     }
 }
 ```
+<h3>Cimpilación del codigo</h3>
+<img width="389" height="268" alt="Captura de pantalla 2026-05-27 201457" src="https://github.com/user-attachments/assets/c507d02d-d399-4ed6-b9aa-07c776d16c0d" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
@@ -3287,7 +3968,34 @@ y(n+1) = yn + h*y' + (h²/2!)*y'' + (h³/3!)*y'''
 </ul>
 
 <hr>
+<h3>Pseudocódigo</h3>
 
+<pre>
+Inicio
+
+    Definir x = 0
+    Definir y = 1
+
+    Definir h = 0.1
+
+    Definir pasos = 10
+
+    Mostrar "x   y"
+
+    Para i = 0 hasta pasos - 1
+
+        Mostrar x + "   " + y
+
+        y = y +
+            h * dydx(x, y) +
+            (h² / 2) * d2ydx2(x, y)
+
+        x = x + h
+
+    Fin Para
+
+Fin
+</pre>
 <h3>Ejemplo en Java</h3>
 
 ```java
@@ -3326,6 +4034,11 @@ public class MetodoTaylor {
     }
 }
 ```
+<h3>Compilación del codigo</h3>
+
+<img width="382" height="260" alt="Captura de pantalla 2026-05-27 201705" src="https://github.com/user-attachments/assets/ba4af579-6139-4a7b-ba66-aa3d97c680fd" />
+
+
 <p align="right">
 <a href="#indice">⬆ Volver al índice</a>
 </p>
